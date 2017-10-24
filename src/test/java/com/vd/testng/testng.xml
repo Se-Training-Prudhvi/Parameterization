@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- suite name="Main Test Suite" parallel="tests" verbose="1"> -->
+<suite name="Main Test Suite" verbose="1">
+	<parameter name="email" value="prudhvi.kothapalli@gmail.com"></parameter>
+	<parameter name="password" value="Selenium"></parameter>
+	
+	<test name="SeleniumTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.vd.testng.Test1"></class>
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.vd.testng.Test2"></class>
+		</classes>
+	</test>
+</suite>
